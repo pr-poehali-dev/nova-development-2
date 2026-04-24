@@ -14,15 +14,15 @@ export default function Footer() {
       <div className="flex flex-col items-center text-center">
         <a href="#" className="flex items-center justify-center mb-4">
           <span className="text-2xl font-bold text-black dark:text-white">
-            Neural<span className="text-[#7A7FEE]">Works</span>
+            China<span className="text-[#7A7FEE]">Cargo</span>
           </span>
         </a>
         <p className="text-sm text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-8">
-          Ваш AI-партнер в создании качественных масштабируемых платформ.
+          Поставки товаров из Китая под ключ — от поиска поставщика до доставки на ваш склад.
         </p>
 
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          {new Date().getFullYear()} NeuralWorks. Все права защищены.
+          {new Date().getFullYear()} ChinaCargo. Все права защищены.
         </p>
       </div>
     </footer>

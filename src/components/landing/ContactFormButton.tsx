@@ -8,7 +8,7 @@ interface ContactFormButtonProps {
 export default function ContactFormButton({ className = "", children }: ContactFormButtonProps) {
   return (
     <a href="#contact" className={className || "btn-primary"}>
-      {children || "Записаться на консультацию"}
+      {children || "Получить бесплатный расчёт"}
     </a>
   )
 }
