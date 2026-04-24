@@ -6,21 +6,21 @@ const services = [
     title: "Поиск поставщиков",
     description: "Находим проверенных производителей на фабриках Китая, проводим переговоры и получаем лучшие условия по цене и качеству.",
     icon: "Search",
-    color: "bg-[#7A7FEE]",
+    color: "bg-[#c8102e]",
   },
   {
     id: 2,
     title: "Контроль качества",
     description: "Инспектируем товар на производстве до отгрузки. Вы получаете только то, что заказали — без сюрпризов.",
     icon: "ShieldCheck",
-    color: "bg-[#7A7FEE]",
+    color: "bg-[#c8102e]",
   },
   {
     id: 3,
     title: "Доставка и таможня",
     description: "Организуем логистику, оформляем все документы и растамаживаем груз. Товар приезжает быстро и без лишних затрат.",
     icon: "Truck",
-    color: "bg-[#7A7FEE]",
+    color: "bg-[#c8102e]",
   },
 ]
 
@@ -29,7 +29,7 @@ export default function Services() {
     <section id="services" className="my-20">
       <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
         Всё для вашего
-        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">импортного бизнеса</span>
+        <span className="block text-[#c8102e] dark:text-[#e8d48b]">импортного бизнеса</span>
       </h2>
       <p className="mb-12 max-w-2xl text-gray-700 dark:text-gray-300">
         Берём на себя весь цикл поставки — от поиска поставщика в Китае до доставки на ваш склад. Работаем прозрачно: вы всегда знаете, где ваш товар и сколько стоит каждый этап.

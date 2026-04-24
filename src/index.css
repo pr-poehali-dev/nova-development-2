@@ -4,41 +4,45 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #111827;
-  --card: #f3f4f6;
-  --card-foreground: #111827;
-  --card-border: #e5e7eb;
-  --primary: #7a7fee;
+  --foreground: #1a0a0a;
+  --card: #fdf5f5;
+  --card-foreground: #1a0a0a;
+  --card-border: #f0d8d8;
+  --primary: #c8102e;
   --primary-foreground: #ffffff;
-  --secondary: #f3f4f6;
-  --secondary-foreground: #111827;
+  --secondary: #fdf5f5;
+  --secondary-foreground: #1a0a0a;
   --muted: #6b7280;
   --muted-foreground: #4b5563;
-  --accent: #f3f4f6;
-  --accent-foreground: #111827;
-  --border: #d1d5db;
-  --input: #d1d5db;
-  --ring: #7a7fee;
+  --accent: #fdf5f5;
+  --accent-foreground: #1a0a0a;
+  --border: #e8c8c8;
+  --input: #e8c8c8;
+  --ring: #c8102e;
   --radius: 0.75rem;
+  --brand: #c8102e;
+  --gold: #d4a017;
 }
 
 .dark {
-  --background: #101112;
-  --foreground: #d9d9d9;
-  --card: #272829;
+  --background: #120808;
+  --foreground: #f0e0e0;
+  --card: #1e0f0f;
   --card-foreground: #ffffff;
-  --card-border: #1a1a1a;
-  --primary: #7a7fee;
+  --card-border: #2a1010;
+  --primary: #c8102e;
   --primary-foreground: #ffffff;
-  --secondary: #272829;
+  --secondary: #1e0f0f;
   --secondary-foreground: #ffffff;
   --muted: #a1a1aa;
   --muted-foreground: #d4d4d8;
-  --accent: #2a2a2a;
+  --accent: #2a1010;
   --accent-foreground: #ffffff;
-  --border: #2a2a2a;
-  --input: #2a2a2a;
-  --ring: #7a7fee;
+  --border: #2a1010;
+  --input: #2a1010;
+  --ring: #c8102e;
+  --brand: #c8102e;
+  --gold: #d4a017;
 }
 
 @layer base {
@@ -109,7 +113,7 @@
   }
 
   .btn-primary {
-    background-color: #7a7fee;
+    background-color: var(--brand);
     color: #ffffff;
     @apply px-6 py-2.5 rounded-md hover:bg-opacity-90 transition-all text-sm font-medium shadow-sm inline-block;
   }
@@ -125,12 +129,12 @@
   }
 
   .section-subtitle {
-    color: #7a7fee;
+    color: var(--brand);
     @apply font-medium mb-6;
   }
 
   .accent-text {
-    color: #7a7fee;
+    color: var(--brand);
   }
 
   .mobile-menu-overlay {
@@ -199,7 +203,8 @@
   }
 
   .prose a {
-    @apply text-[#7A7FEE] hover:underline;
+    color: var(--brand);
+    @apply hover:underline;
   }
 
   .prose strong {

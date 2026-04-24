@@ -29,7 +29,7 @@ export default function Projects() {
     <section id="projects" className="my-20">
       <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
         Примеры наших
-        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">поставок</span>
+        <span className="block text-[#c8102e] dark:text-[#e8d48b]">поставок</span>
       </h2>
       <p className="mb-12 max-w-2xl text-gray-700 dark:text-gray-300">
         Работаем с разными категориями товаров — от мелкой электроники до промышленного оборудования. Каждый клиент получает персонального менеджера и полный контроль над своим грузом.
@@ -51,7 +51,7 @@ export default function Projects() {
             <div className="p-4 md:p-6">
               <h3 className="text-xl font-semibold text-black dark:text-white">{project.title}</h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm mt-1 mb-4">{project.shortDescription}</p>
-              <div className="inline-flex items-center text-[#7A7FEE] text-sm font-medium group">
+              <div className="inline-flex items-center text-[#c8102e] dark:text-[#e8d48b] text-sm font-medium group">
                 Подробнее об этом кейсе{" "}
                 <ArrowUpRight className="w-4 h-4 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </div>

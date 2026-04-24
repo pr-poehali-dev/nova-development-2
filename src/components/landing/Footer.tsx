@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="flex flex-col items-center text-center">
         <a href="#" className="flex items-center justify-center mb-4">
           <span className="text-2xl font-bold text-black dark:text-white">
-            China<span className="text-[#7A7FEE]">Cargo</span>
+            China<span className="text-[#c8102e]">Cargo</span>
           </span>
         </a>
         <p className="text-sm text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-8">
