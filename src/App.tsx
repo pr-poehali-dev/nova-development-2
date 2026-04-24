@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { ThemeProvider } from "next-themes"
 import Index from "./pages/Index"
 import NotFound from "./pages/NotFound"
+import ServiceSuppliers from "./pages/ServiceSuppliers"
+import ServiceQuality from "./pages/ServiceQuality"
+import ServiceDelivery from "./pages/ServiceDelivery"
 
 const queryClient = new QueryClient()
 
@@ -18,6 +21,9 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/services/suppliers" element={<ServiceSuppliers />} />
+            <Route path="/services/quality" element={<ServiceQuality />} />
+            <Route path="/services/delivery" element={<ServiceDelivery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

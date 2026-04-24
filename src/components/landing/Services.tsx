@@ -1,4 +1,6 @@
 import Icon from "@/components/ui/icon"
+import { Link } from "react-router-dom"
+import { ArrowUpRight } from "lucide-react"
 
 const services = [
   {
@@ -7,6 +9,7 @@ const services = [
     description: "Находим проверенных производителей на фабриках Китая, проводим переговоры и получаем лучшие условия по цене и качеству.",
     icon: "Search",
     color: "bg-[#c8102e]",
+    href: "/services/suppliers",
   },
   {
     id: 2,
@@ -14,6 +17,7 @@ const services = [
     description: "Инспектируем товар на производстве до отгрузки. Вы получаете только то, что заказали — без сюрпризов.",
     icon: "ShieldCheck",
     color: "bg-[#c8102e]",
+    href: "/services/quality",
   },
   {
     id: 3,
@@ -21,6 +25,7 @@ const services = [
     description: "Организуем логистику, оформляем все документы и растамаживаем груз. Товар приезжает быстро и без лишних затрат.",
     icon: "Truck",
     color: "bg-[#c8102e]",
+    href: "/services/delivery",
   },
 ]
 
@@ -37,12 +42,19 @@ export default function Services() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {services.map((service) => (
-          <div key={service.id} className="card p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div key={service.id} className="card p-6 shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col">
             <div className={`${service.color} w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-sm`}>
               <Icon name={service.icon} size={24} className="text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-black dark:text-white">{service.title}</h3>
-            <p className="text-gray-700 dark:text-gray-300">{service.description}</p>
+            <p className="text-gray-700 dark:text-gray-300 flex-1">{service.description}</p>
+            <Link
+              to={service.href}
+              className="inline-flex items-center mt-4 text-[#c8102e] dark:text-[#e8d48b] text-sm font-medium group"
+            >
+              Подробнее
+              <ArrowUpRight className="w-4 h-4 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </Link>
           </div>
         ))}
       </div>
