@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound"
 import ServiceSuppliers from "./pages/ServiceSuppliers"
 import ServiceQuality from "./pages/ServiceQuality"
 import ServiceDelivery from "./pages/ServiceDelivery"
+import Reviews from "./pages/Reviews"
 
 const queryClient = new QueryClient()
 
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/services/suppliers" element={<ServiceSuppliers />} />
             <Route path="/services/quality" element={<ServiceQuality />} />
             <Route path="/services/delivery" element={<ServiceDelivery />} />
+            <Route path="/reviews" element={<Reviews />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

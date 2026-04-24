@@ -1,0 +1,8 @@
+CREATE TABLE reviews (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  company VARCHAR(100),
+  rating INTEGER NOT NULL CHECK (rating BETWEEN 1 AND 5),
+  text TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);

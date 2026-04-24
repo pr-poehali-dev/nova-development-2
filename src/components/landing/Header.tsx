@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import ThemeToggle from "./ThemeToggle"
 import { useTheme } from "next-themes"
+import { Link } from "react-router-dom"
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -69,6 +70,14 @@ export default function Header() {
                     >
                       Вопросы
                     </a>
+                  </li>
+                  <li>
+                    <Link
+                      to="/reviews"
+                      className="text-black dark:text-white hover:text-[#c8102e] dark:hover:text-[#e8d48b] transition-colors"
+                    >
+                      Отзывы
+                    </Link>
                   </li>
                   <li>
                     <a
@@ -148,6 +157,15 @@ export default function Header() {
                   >
                     Вопросы
                   </a>
+                </li>
+                <li>
+                  <Link
+                    to="/reviews"
+                    className="flex items-center py-3 px-4 rounded-lg text-base text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Отзывы
+                  </Link>
                 </li>
               </ul>
             </nav>
